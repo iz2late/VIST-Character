@@ -38,7 +38,9 @@ The dataset is contained in a single JSON file, with each data point represented
             "rating": "importance of character",
         },
         ...,
-        "Cn": {...},
+        "Cn": {
+            ...
+        },
     },
     "quality": the story quality on a scale of Great/Acceptable/Unacceptable.
 }
