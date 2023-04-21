@@ -48,6 +48,11 @@ The dataset is contained in a single JSON file, with each data point represented
     "quality": the story quality on a scale of Great/Acceptable/Unacceptable.
 }
 ```
+
+## Baseline and Visualization Code
+
+coming soon
+
 ## Citation
 
 The purpose of this repository is to facilitate reproducibility and encourage further research using the dataset and code provided. If you use this dataset or code in your work, please cite our paper:
