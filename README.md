@@ -15,31 +15,30 @@ The dataset is contained in a single JSON file, with each data point represented
     },
     "gt_char": {
         "C1": {
-            "coref": [
-                        {
-                            "start": index of the first token in the story,
-                            "end": index of the lsat token in the story,
-                            "text": the textual character mention,
-                            "labels": character label (C_k),
-                        },
-                        ...,
-                    ],
+            "coref": [{
+                        "start": index of the first token in the story,
+                        "end": index of the lsat token in the story,
+                        "text": the textual character mention,
+                        "labels": character label (C_k),
+                    },
+                    ...,
+            ],
             "plural": "yes/no",
             "bboxes": {
-                "img1": {
+                "img1": [{
                     "x": float,
                     "y": float,
                     "width": float,
                     "height": float,
                     "rectanglelabels": character label (C_k),
                 },
-                ...,
-                "img5": {...},
+                ...]
+                "img5": [{bbox_1}, {bbox_2}, ...],
             },
             "rating": "importance of character",
         },
         ...,
-        "Cn"
+        "Cn": {...},
     },
     "quality": the story quality on a scale of Great/Acceptable/Unacceptable.
 }
