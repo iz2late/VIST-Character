@@ -8,16 +8,42 @@ VIST-Character dataset augments the test split of [VIST dataset](https://aclanth
 The dataset is contained in a single JSON file, with each data point represented as a JSON object. The structure of a sample JSON object is as follows:
 ```json
 {
-  "key_1": "value_type_1",
-  "key_2": "value_type_2",
-  "key_3": {
-    "nested_key_1": "nested_value_type_1",
-    "nested_key_2": "nested_value_type_2"
+  "story": "the original VIST story",
+  "meta_date": {
+    "story_id": "the original VIST story id",
+    "img_id": [
+      "img_1",
+      "img_2",
+        ...,
+      "img_5"]
   },
-  "key_4": [
-    "list_value_type_1",
-    "list_value_type_2"
-  ]
+  "gt_char": {
+    "C1"{
+      "coref": [
+        {
+          "start":
+          "end":
+          "text":
+          "labels":
+        },
+      ],
+      "plural": "yes" or "no",
+      "bboxes": {
+        "img1" : [
+        {
+        "x": float,
+        "y": float,
+        "width": float,
+        "height": float,
+        },
+        ...
+        ]
+        }
+    }
+    ...,
+    "Cn"
+  },
+  "quality": the story quality on a scale of Great/Acceptable/Unacceptable.
 }
 ```
 ## Citation
