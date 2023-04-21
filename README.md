@@ -4,6 +4,9 @@ This repository contains the dataset and accompanying code presented in the AAAI
 ## Dataset Description
 VIST-Character dataset augments the test split of [VIST dataset](https://aclanthology.org/N16-1147/) with rich character-centric annotations, including visual and textual co-reference chains and importance ratings for characters.
 
+**Download the dataset:** The dataset is hosted on Google Drive, and you can download it from [here](https://drive.google.com/file/d/1CNZH6cAeQLAvS-fLJgo1pdFb9_gdWzG6/view).
+
+
 ## Data Format
 The dataset is contained in a single JSON file, with each data point represented as a JSON object. The structure of a sample JSON object is as follows:
 ```
