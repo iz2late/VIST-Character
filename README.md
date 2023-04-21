@@ -35,7 +35,7 @@ The dataset is contained in a single JSON file, with each data point represented
                 ...]
                 "img5": [{bbox_1}, {bbox_2}, ...],
             },
-            "rating": "importance of character",
+            "rating": "importance of character on a scale of 1 to 5",
         },
         ...,
         "Cn": {
