@@ -8,42 +8,40 @@ VIST-Character dataset augments the test split of [VIST dataset](https://aclanth
 The dataset is contained in a single JSON file, with each data point represented as a JSON object. The structure of a sample JSON object is as follows:
 ```
 {
-  "story": "the original VIST story",
-  "meta_date": {
-    "story_id": "the original VIST story id",
-    "img_id": [
-      "img_1",
-      "img_2",
+    "story": "the original VIST story",
+    "meta_date": {
+        "story_id": "the original VIST story id",
+        "img_id": ["img_1_id", "img_2_id", ..., "img_5_id"]
+    },
+    "gt_char": {
+        "C1": {
+            "coref": [
+                        {
+                            "start": index of the first token in the story,
+                            "end": index of the lsat token in the story,
+                            "text": the textual character mention,
+                            "labels": character label (C_k),
+                        },
+                        ...,
+                    ],
+            "plural": "yes/no",
+            "bboxes": {
+                "img1": {
+                    "x": float,
+                    "y": float,
+                    "width": float,
+                    "height": float,
+                    "rectanglelabels": character label (C_k),
+                },
+                ...,
+                "img5": {...},
+            },
+            "rating": "importance of character",
+        },
         ...,
-      "img_5"]
-  },
-  "gt_char": {
-    "C1"{
-      "coref": [
-        {
-          "start":
-          "end":
-          "text":
-          "labels":
-        },
-      ],
-      "plural": "yes" or "no",
-      "bboxes": {
-        "img1" : [
-        {
-        "x": float,
-        "y": float,
-        "width": float,
-        "height": float,
-        },
-        ...
-        ]
-        }
-    }
-    ...,
-    "Cn"
-  },
-  "quality": the story quality on a scale of Great/Acceptable/Unacceptable.
+        "Cn"
+    },
+    "quality": the story quality on a scale of Great/Acceptable/Unacceptable.
 }
 ```
 ## Citation
