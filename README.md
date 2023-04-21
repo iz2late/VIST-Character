@@ -6,7 +6,7 @@ VIST-Character dataset augments the test split of [VIST dataset](https://aclanth
 
 ## Data Format
 The dataset is contained in a single JSON file, with each data point represented as a JSON object. The structure of a sample JSON object is as follows:
-```json
+```
 {
   "story": "the original VIST story",
   "meta_date": {
