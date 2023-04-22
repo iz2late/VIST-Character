@@ -56,7 +56,7 @@ The dataset is contained in a single JSON file, with each data point represented
 
 We are orgnising the code and will release soon.
 
-## Citation
+## Reference
 
 The purpose of this repository is to facilitate reproducibility and encourage further research using the dataset and code provided. If you use this dataset or code in your work, please cite our paper:
 ```bibtex
